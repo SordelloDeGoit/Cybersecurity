@@ -1,0 +1,9 @@
+Usually, the system has issues in the users, for example the system can has users
+as:
+
+	-admin
+	-administration
+	-root
+
+The first two maybe has blank space as password, else the user "root" is basically the
+main user and has all of the permissions to enter without a password. 

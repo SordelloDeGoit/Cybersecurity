@@ -1,0 +1,11 @@
+One of the most important things to do in a pentesting test is map or enumarete all of
+the ports to find any vulnerability way to use to hack the system.
+
+In this case I am going to use a "nmap" command (Network Mapper) and it will send request
+over the target's ports, then it will recive a reply, determinating if the port is open or
+not.
+
+nmap -sV {target_ip}
+
+-sV: service detection flag to determine the name and description of the indentified ser-
+     vices.

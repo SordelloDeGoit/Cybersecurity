@@ -1,0 +1,28 @@
+Something important to know is about the web server, they work by a machine and works until
+the maching is off, they can provide us a lot of imformation clicking on the web pages and
+we could find a web page that is not public so it could be less secure and has many vulnera-
+bilities.
+
+The default port of a web server is the port 80/tcp (http). The address of a web page is
+basically and IP address tranformated with a DNS server, so you can type www.name.com, but
+behind it is an IP address.
+
+gobuster dir -w /usr/share/wordlists/dirb/common.txt -u {target_IP}
+
+dir : specify we are using the directory busting mode of the tool.
+-w : specify a wordlist, a collection of common directory names that are typically usedfor
+sites.
+-u : specify the target's IP address.
+
+gobuster is a tool to seek the hidden content into a link is written in Go. The tool was
+make severalconnection attempts to the target using the HTTP GET method (requesting web
+pages from the webserver)with different URL variations, such as:
+
+GET http://{target_IP}/kittens
+GET http://{target_IP}/hackers
+GET http://{target_IP}/admin.php
+GET http://{target_IP}/hackthebox
+GET http://{target_IP}/yourespecial
+
+Also, gobuster use a brute-lock way to find the other web services.
+

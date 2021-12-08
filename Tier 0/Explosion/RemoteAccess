@@ -1,0 +1,20 @@
+The internet has many things that can help us to use devices from others countries in our
+own device. One of the most famous protocols is RDP (Remote Desktop Protocol).
+
+Telnet is the first RDP, but is insecure and basic in these times, by default the port is
+23, SSH on port 22. SSH (Secure Shell Protocol), adds the required layers of authentication
+and encryption tothe communication model, making it a much more viable approach to perform
+remote access and remotefile transfers. It is used both for patch delivery, file transfers,
+log transfer, and remote management intoday's environment.
+
+Basically, SSH is the secure way to use telnet and transfer files between hosts.
+
+The CLI remote access was the first way to get a remote access between hosts, but the GUI
+way is newer so this is a way that you can use to use the mouse, the keyboard, the screen,
+etc.
+
+xfreefdp /v:{target_ip} /cert:ignore /u:Administrator
+
+/cert:ignore : Specifies to the scrips that all security certificate usage should beignored.
+/u:Administrator : Specifies the login username to be "Administrator".
+/v:{target_IP} : Specifies the target IP of the host we would like to connect to.

@@ -1,0 +1,34 @@
+On the network exist many ways to comunicate or transfer a message between tow end to end
+points, the name of this protocol is SMB (Server Message Block), this protocol provides
+shared access to files, printers and serial ports between endpoints on a network.
+
+As the FTP protocol, the SMB has credentials and need users and passwords to access at the
+files and printers of the other host, to create, edit, retrive and remover the SMB protocol
+has ways to authenticate the client, in this case it required to provide a username/password
+combination to interact with the things.
+
+"Despite having the ability to secure access to the share, a network administrator can
+sometimes makemistakes and accidentaly allow logins without any valid credentials or using
+either guest accounts oranonymous log-ons." (0ne-nine9, 2021, Dancing.pdf)
+
+To know the host of the SMB protocol use the next command:
+
+smbclient -L {target_ip}
+
+-L: Selecting the targeted host for the connection request.
+
+Smbclient will attempt to connect to the remote host and check if there is any 
+authentication required. Ifthere is, it will ask you for a password for your local username.
+
+ADMIN$ - Administrative shares are hidden network shares created by the Windows NT family 
+ofoperating systems that allow system administrators to have remote access to every disk 
+volume on anetwork-connected system. These shares may not be permanently deleted but may be 
+disabled.
+
+C$ - Administrative share for the C:\ disk volume. This is where the operating system is 
+hosted.
+
+IPC$ - The inter-process communication share. Used for inter-process communication via 
+namedpipes and is not part of the file system.
+
+WorkShares - Custom share.

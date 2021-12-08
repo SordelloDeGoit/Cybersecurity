@@ -1,0 +1,18 @@
+An interesting thing about the FTP servers is the anonymous user, that has acces to
+the FTP server.
+
+Usually, the FTP server is allocated on port 21 and is not secure, to more security
+it must use the SSH port to make an SFTP server.
+
+To access a FTP server is neccesary know the IP, the user and the password and the
+FTP server just process one instruction per second. After get into the server you can
+explore the different commands in.
+
+ftp {target_ip}
+
+Finally to get the flag is necessary "get" the file using the next command.
+
+get flag.txt
+bye
+
+And then the flag is ours.

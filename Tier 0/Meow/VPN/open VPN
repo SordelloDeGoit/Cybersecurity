@@ -1,0 +1,6 @@
+Use the next command to open the VPN:
+
+	- Make sure that you have the "ovpn" file.
+	- Next use: openvpn {filename}.ovpn
+
+Then you're going to have the vpn activated.
